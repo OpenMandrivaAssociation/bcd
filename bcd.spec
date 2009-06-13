@@ -1,5 +1,5 @@
 %define name bcd
-%define version 0.2
+%define version 0.3
 %define release %mkrel 1
 
 Summary: Tool to build Mandriva ISO
@@ -23,6 +23,7 @@ Create Mandriva ISO
 - change the theme on all.rdz files
 - just need an input and an exclude file
 - write media.cfg
+- use input or exclude list for each media
 - use custom rpmsrate of compssusers.pl
 - all sub-media supported (updates, testing...)
 - iso HEADER
@@ -46,7 +47,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc README bcd.xml exclude input
+%doc README bcd.xml lists/*
 %{_bindir}/bcd
 %{perl_vendorlib}/bcd
 
