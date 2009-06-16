@@ -11,7 +11,7 @@ License: GPL
 Group: System/Configuration/Packaging
 Url: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/bcd
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Requires: perl-File-Copy sudo urpmi
+Requires: perl-File-Copy-Recursive sudo urpmi
 BuildArch: noarch
 
 
