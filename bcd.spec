@@ -1,5 +1,5 @@
 %define name bcd
-%define version 0.3
+%define version 0.5
 %define release %mkrel 1
 
 Summary: Tool to build Mandriva ISO
@@ -12,6 +12,8 @@ Group: System/Configuration/Packaging
 Url: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/bcd
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: perl-File-Copy-Recursive sudo urpmi
+requires: cdrkit-genisoimage cdrkit-isotools syslinux
+requires: gfxboot mandriva-gfxboot-theme drakxtools-backend
 BuildArch: noarch
 
 
@@ -27,9 +29,11 @@ Create Mandriva ISO
 - use custom rpmsrate of compssusers.pl
 - all sub-media supported (updates, testing...)
 - iso HEADER
+- suggests option per media
 - md5 in a file
 - create a product.id file
 - create a VERSION file
+- support rpmsrate CAT
 
 
 %prep
@@ -41,13 +45,12 @@ Create Mandriva ISO
 rm -rf %{buildroot}
 make install PREFIX=$RPM_BUILD_ROOT
 
-
 %clean
 rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc README bcd.xml lists/*
+%doc README *.xml lists/* 
 %{_bindir}/bcd
-%{perl_vendorlib}/bcd
+%{perl_vendorlib}/BCD
 
