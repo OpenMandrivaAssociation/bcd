@@ -1,5 +1,5 @@
 %define name bcd
-%define version 0.6
+%define version 0.7
 %define release %mkrel 1
 
 Summary: Tool to build Mandriva ISO
@@ -53,4 +53,5 @@ rm -rf %{buildroot}
 %doc README *.xml lists 
 %{_bindir}/bcd
 %{perl_vendorlib}/BCD
+%{perl_vendorlib}/%name.pod
 %{_mandir}/man1/*
