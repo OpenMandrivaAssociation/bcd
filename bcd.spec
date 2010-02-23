@@ -1,6 +1,6 @@
 %define name bcd
 %define version 2.0
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary: Tool to build Mandriva ISO
 Name: %{name}
