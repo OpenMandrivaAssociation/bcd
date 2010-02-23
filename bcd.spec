@@ -1,6 +1,6 @@
 %define name bcd
 %define version 2.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Tool to build Mandriva ISO
 Name: %{name}
@@ -11,7 +11,7 @@ License: GPL
 Group: System/Configuration/Packaging
 Url: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/bcd
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Requires: perl-File-Copy-Recursive sudo urpmi
+Requires: perl-File-Copy-Recursive sudo urpmi perl-Parallel-ForkManager
 requires: cdrkit-genisoimage cdrkit-isotools syslinux
 requires: gfxboot mandriva-gfxboot-theme drakxtools-backend
 BuildArch: noarch
