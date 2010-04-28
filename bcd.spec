@@ -1,5 +1,5 @@
 %define name bcd
-%define version 3.0
+%define version 3.1
 %define release %mkrel 1
 
 Summary: Tool to build Mandriva ISO
@@ -14,7 +14,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: perl-File-Copy-Recursive sudo urpmi perl-Parallel-ForkManager
 requires: cdrkit-genisoimage cdrkit-isotools syslinux
 requires: gfxboot mandriva-gfxboot-theme drakxtools-backend
-Buildrequires:	perl-LaTeX-Driver
+Buildrequires:	perl-LaTeX-Driver perl-Class-Accessor
 BuildArch: noarch
 
 
@@ -54,6 +54,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc README *.xml lists create_dual.sh doc/*.pdf
 %{_bindir}/bcd
+%{_bindir}/*.pl
 %{perl_vendorlib}/BCD
 %{perl_vendorlib}/%name.pod
 %{_mandir}/man1/*
