@@ -1,5 +1,5 @@
 %define name bcd
-%define version 3.1
+%define version 3.2
 %define release %mkrel 1
 
 Summary: Tool to build Mandriva ISO
@@ -24,7 +24,7 @@ Create Mandriva ISO
 - use of genhdlist2 with file-deps
 - support the add of isolinux entry
 - change the theme on all.rdz files
-- just need an input and an exclude file
+- just need an input and an exclude file per media
 - write media.cfg
 - use input or exclude list for each media
 - use custom rpmsrate of compssusers.pl
