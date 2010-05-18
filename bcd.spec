@@ -1,5 +1,5 @@
 %define name bcd
-%define version 3.2
+%define version 3.3
 %define release %mkrel 1
 
 Summary: Tool to build Mandriva ISO
@@ -45,6 +45,7 @@ Create Mandriva ISO
 
 %install
 rm -rf %{buildroot}
+%make pdf
 %make install PREFIX=$RPM_BUILD_ROOT
 
 %clean
