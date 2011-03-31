@@ -1,5 +1,5 @@
 %define name bcd
-%define version 3.4
+%define version 3.5
 %define release %mkrel 1
 
 Summary: Tool to build Mandriva ISO
@@ -13,7 +13,7 @@ Url: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/bcd
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: perl-File-Copy-Recursive sudo urpmi perl-Parallel-ForkManager
 requires: cdrkit-genisoimage cdrkit-isotools syslinux
-requires: gfxboot mandriva-gfxboot-theme drakxtools-backend
+requires: gfxboot mandriva-gfxboot-theme drakxtools-backend rpmcheck
 Buildrequires:	perl-LaTeX-Driver perl-Class-Accessor
 BuildArch: noarch
 
