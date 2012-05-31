@@ -3,7 +3,7 @@ Name:		bcd
 Version:	3.6
 Release:	1
 Source0:	%{name}-%{version}.tar.xz
-License:	GPL
+License:	GPLv2+
 Group:		System/Configuration/Packaging
 Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/bcd
 Requires:	perl-File-Copy-Recursive sudo urpmi perl-Parallel-ForkManager
