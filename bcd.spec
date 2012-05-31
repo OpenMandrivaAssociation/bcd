@@ -37,9 +37,9 @@ Create Mandriva ISO
 
 %build
 %make
+%make pdf
 
 %install
-%make pdf
 %make install PREFIX=$RPM_BUILD_ROOT
 
 %files
