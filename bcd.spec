@@ -1,12 +1,12 @@
 %define name bcd
-%define version 3.5
+%define version 3.6
 %define release %mkrel 1
 
 Summary: Tool to build Mandriva ISO
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
+Source0: %{name}-%{version}.tar.xz
 License: GPL
 Group: System/Configuration/Packaging
 Url: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/bcd
