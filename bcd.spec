@@ -9,7 +9,7 @@ Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/bcd
 Requires:	perl-File-Copy-Recursive sudo urpmi perl-Parallel-ForkManager
 Requires:	cdrkit-genisoimage cdrkit-isotools syslinux
 Requires:	gfxboot mandriva-gfxboot-theme drakxtools-backend rpmcheck rpmtools
-Buildrequires:	perl-LaTeX-Driver perl-Class-Accessor
+Buildrequires:	perl-LaTeX-Driver perl-Class-Accessor texlive-collection-fontsextra
 BuildArch:	noarch
 
 
