@@ -1,3 +1,5 @@
+%bcond_with	pdf
+
 Summary:	Tool to build Mandriva ISO
 Name:		bcd
 Version:	3.7
@@ -9,7 +11,9 @@ Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/bcd
 Requires:	perl-File-Copy-Recursive sudo urpmi perl-Parallel-ForkManager
 Requires:	cdrkit-genisoimage cdrkit-isotools syslinux
 Requires:	gfxboot mandriva-gfxboot-theme drakxtools-backend rpmcheck rpmtools
+%if %{with pdf}
 Buildrequires:	perl-LaTeX-Driver perl-Class-Accessor texlive-collection-fontsextra
+%endif
 BuildArch:	noarch
 
 
@@ -37,13 +41,18 @@ Create Mandriva ISO
 
 %build
 %make
+%if %{with pdf}
 %make pdf
+%endif
 
 %install
 %make install PREFIX=$RPM_BUILD_ROOT
 
 %files
-%doc README *.xml lists create_dual.sh doc/*.pdf
+%doc README *.xml lists create_dual.sh
+%if %{with pdf}
+%doc doc/*.pdf
+%endif
 %{_bindir}/bcd
 %{_bindir}/*.pl
 %{perl_vendorlib}/BCD
