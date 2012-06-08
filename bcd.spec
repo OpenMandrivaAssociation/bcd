@@ -1,6 +1,6 @@
 Summary:	Tool to build Mandriva ISO
 Name:		bcd
-Version:	3.6
+Version:	3.7
 Release:	1
 Source0:	%{name}-%{version}.tar.xz
 License:	GPLv2+
