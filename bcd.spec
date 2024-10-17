@@ -7,7 +7,7 @@ Release:	2
 Source0:	%{name}-%{version}.tar.xz
 License:	GPLv2+
 Group:		System/Configuration/Packaging
-Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/bcd
+Url:		https://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/bcd
 Requires:	perl-File-Copy-Recursive sudo urpmi perl-Parallel-ForkManager
 Requires:	cdrkit-genisoimage cdrkit-isotools syslinux
 Requires:	gfxboot mandriva-gfxboot-theme drakxtools-backend rpmtools
