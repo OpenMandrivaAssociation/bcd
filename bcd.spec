@@ -13,6 +13,7 @@ Requires:	cdrkit-genisoimage cdrkit-isotools syslinux
 Requires:	gfxboot mandriva-gfxboot-theme drakxtools-backend rpmtools
 Suggests:	rpmcheck smart
 %if %{with pdf}
+BuildRequires:	make
 Buildrequires:	perl-LaTeX-Driver perl-Class-Accessor texlive-collection-fontsextra
 %endif
 BuildArch:	noarch
